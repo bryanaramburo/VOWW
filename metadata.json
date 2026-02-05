@@ -1,0 +1,7 @@
+{
+  "name": "Viejo Oeste Western Wear",
+  "description": "Authentic Mexican western wear retail showcase. Featuring premium boots, hats, and apparel with locations in Delaware and Pennsylvania.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

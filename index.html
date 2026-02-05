@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Viejo Oeste Western Wear | Authentic Mexican Western Style</title>
+    <meta name="description" content="Authentic Mexican western wear in Delaware and Pennsylvania. Premium boots, hats, belts, and custom services. Visit us in New Castle or Philadelphia." />
+    <meta name="keywords" content="western wear, mexican boots, stetson hats, tejanas, exotic leathers, delaware western store, philadelphia western store" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Viejo Oeste Western Wear" />
+    <meta property="og:description" content="Authentic Mexican western wear in Delaware and Pennsylvania. Premium boots, hats, and apparel." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/og-image.jpg" />
+
+    <!-- Performance: Preload Critical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-dark': '#3D2314',
+              'accent-copper': '#C4956A',
+              'bg-cream': '#F5F0E8',
+              'accent-gold': '#DAA520',
+              'body-text': '#2C2C2C',
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body { color: #2C2C2C; background-color: #F5F0E8; -webkit-font-smoothing: antialiased; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      /* Accessibility Focus states */
+      :focus-visible { outline: 3px solid #C4956A; outline-offset: 2px; }
+    </style>
+
+    <!-- Local Business Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "ClothingStore",
+        "name": "Viejo Oeste Western Wear - New Castle",
+        "image": "https://viejooeste.com/images/logo.png",
+        "telephone": "(770) 861-8830",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "110 N Dupont Highway",
+          "addressLocality": "New Castle",
+          "addressRegion": "DE",
+          "postalCode": "19720",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ClothingStore",
+        "name": "Viejo Oeste Western Wear - Philadelphia",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "902 Washington Avenue",
+          "addressLocality": "Philadelphia",
+          "addressRegion": "PA",
+          "postalCode": "19147",
+          "addressCountry": "US"
+        },
+        "telephone": "(267) 951-2589"
+      }
+    ]
+    </script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
