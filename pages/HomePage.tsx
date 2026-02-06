@@ -67,7 +67,7 @@ const ScrollingGalleryColumn = ({ startIndex, speed = "80s", reverse = false }: 
             src={src} 
             alt="Gallery" 
             containerClassName="aspect-square w-full shrink-0 group rounded-2xl shadow-md" 
-            className="grayscale group-hover:grayscale-0 transition-all duration-700" 
+            className="transition-all duration-700" 
             fallbackSrc={`https://picsum.photos/seed/viejooeste-gallery-${idx}/800/800`}
           />
         ))}
@@ -223,8 +223,7 @@ const HomePage: React.FC = () => {
             <div className="hidden md:block"><ScrollingGalleryColumn startIndex={20} speed="75s" /></div>
             <div className="hidden md:block"><ScrollingGalleryColumn startIndex={30} speed="95s" reverse={true} /></div>
             <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white to-transparent pointer-events-none z-10" />
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
-          </div>
+            <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />  
         </div>
       </section>
 
