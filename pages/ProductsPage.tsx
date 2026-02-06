@@ -281,7 +281,7 @@ const ProductsPage: React.FC = () => {
                   src={cat.image} 
                   alt={t(cat.name)} 
                   containerClassName="absolute inset-0" 
-                  className="w-full h-full transition duration-1000 grayscale group-hover:grayscale-0" 
+                  className="w-full h-full transition duration-1000" 
                   fallbackSrc="https://via.placeholder.com/600x800?text=Category" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
